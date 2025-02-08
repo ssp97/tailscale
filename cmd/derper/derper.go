@@ -532,19 +532,19 @@ type templateData struct {
 
 // homePageTemplate renders the home page using [templateData].
 var homePageTemplate = template.Must(template.New("home").Parse(`<html><body>
-<h1>DERP</h1>
+<h1>NekoDERP</h1>
 <p>
-  This is a <a href="https://tailscale.com/">Tailscale</a> DERP server.
+  This is a <a href="https://Neko.com/">Neko</a> DERP server.
 </p>
 
 <p>
   It provides STUN, interactive connectivity establishment, and relaying of end-to-end encrypted traffic
-  for Tailscale clients.
+  for Neko clients.
 </p>
 
 {{if .ShowAbuseInfo }}
 <p>
-  If you suspect abuse, please contact <a href="mailto:security@tailscale.com">security@tailscale.com</a>.
+  If you suspect abuse, please contact <a href="mailto:security@Neko.com">security@Neko.com</a>.
 </p>
 {{end}}
 
@@ -554,12 +554,12 @@ var homePageTemplate = template.Must(template.New("home").Parse(`<html><body>
 
 <ul>
 {{if .ShowAbuseInfo }}
-  <li><a href="https://tailscale.com/security-policies">Tailscale Security Policies</a></li>
-  <li><a href="https://tailscale.com/tailscale-aup">Tailscale Acceptable Use Policies</a></li>
+  <li><a href="https://Neko.com/security-policies">Neko Security Policies</a></li>
+  <li><a href="https://Neko.com/Neko-aup">Neko Acceptable Use Policies</a></li>
 {{end}}
-  <li><a href="https://tailscale.com/kb/1232/derp-servers">About DERP</a></li>
-  <li><a href="https://pkg.go.dev/tailscale.com/derp">Protocol & Go docs</a></li>
-  <li><a href="https://github.com/tailscale/tailscale/tree/main/cmd/derper#derp">How to run a DERP server</a></li>
+  <li><a href="https://Neko.com/kb/1232/derp-servers">About DERP</a></li>
+  <li><a href="https://pkg.go.dev/Neko.com/derp">Protocol & Go docs</a></li>
+  <li><a href="https://github.com/Neko/Neko/tree/main/cmd/derper#derp">How to run a DERP server</a></li>
 </ul>
 
 {{if .Disabled}}
